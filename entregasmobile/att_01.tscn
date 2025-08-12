@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://8gwmtv0b1vpu"]
+
+[ext_resource type="Script" uid="uid://ds724ynuwg8em" path="res://att_01.gd" id="1_clj2t"]
+
+[node name="att01" type="Node2D"]
+script = ExtResource("1_clj2t")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 489.0
+offset_top = 256.0
+offset_right = 671.0
+offset_bottom = 363.0
+text = "Clique
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
