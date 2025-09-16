@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://cb7c567s03a56"]
+
+[ext_resource type="Script" uid="uid://d2rt8xbqoyi8a" path="res://atividade_20/label_timer.gd" id="1_k6gib"]
+
+[node name="LabelTimer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k6gib")
+
+[node name="Labelsec" type="Label" parent="."]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 93.0
+offset_right = 282.0
+offset_bottom = 117.0
+text = "00"
+horizontal_alignment = 1
+
+[node name="Labelmin" type="Label" parent="."]
+offset_left = 197.0
+offset_top = 93.0
+offset_right = 237.0
+offset_bottom = 116.0
+text = "00"
+horizontal_alignment = 1
+
+[node name="Timermill" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[node name="Labelmill" type="Label" parent="."]
+offset_left = 281.0
+offset_top = 93.0
+offset_right = 321.0
+offset_bottom = 116.0
+text = "00"
+horizontal_alignment = 1
+
+[connection signal="timeout" from="Timermill" to="." method="_on_timermill_timeout"]
