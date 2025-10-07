@@ -1,0 +1,85 @@
+[gd_scene load_steps=19 format=3 uid="uid://db80vxuuo3aby"]
+
+[ext_resource type="Script" uid="uid://dbqe6rb7bewcl" path="res://atividade_23/animação.gd" id="1_kjoqi"]
+[ext_resource type="Texture2D" uid="uid://bv3mkctmxuw0x" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_001.png" id="2_8takj"]
+[ext_resource type="Texture2D" uid="uid://dq5m3d2llosjk" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_000.png" id="3_x2jbs"]
+[ext_resource type="Texture2D" uid="uid://bnv07d6dwyx2m" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_002.png" id="4_62qkl"]
+[ext_resource type="Texture2D" uid="uid://7mk8270gh7dj" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_003.png" id="5_qw6xp"]
+[ext_resource type="Texture2D" uid="uid://d1hv567er510k" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_005.png" id="6_s0gam"]
+[ext_resource type="Texture2D" uid="uid://cidyreluklrio" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_004.png" id="7_lg7h3"]
+[ext_resource type="Texture2D" uid="uid://bhwicritc0ynw" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_007.png" id="8_6c02o"]
+[ext_resource type="Texture2D" uid="uid://c04o6jbrswcsd" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_008.png" id="9_mc7eg"]
+[ext_resource type="Texture2D" uid="uid://cv6ci0s1tduko" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_009.png" id="10_68ndu"]
+[ext_resource type="Texture2D" uid="uid://b1du3dgp57u8x" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_011.png" id="11_jrdbt"]
+[ext_resource type="Texture2D" uid="uid://cj3nqx7717tt2" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_012.png" id="12_td72a"]
+[ext_resource type="Texture2D" uid="uid://bmkxfe5tip3or" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_013.png" id="13_t4xgu"]
+[ext_resource type="Texture2D" uid="uid://cp878mmwbgmr3" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_014.png" id="14_x461x"]
+[ext_resource type="Texture2D" uid="uid://biwifpr74l2jn" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_016.png" id="15_ckjus"]
+[ext_resource type="Texture2D" uid="uid://6hkjp53ng42b" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_015.png" id="16_nxiuh"]
+[ext_resource type="Texture2D" uid="uid://5v2obafwe5gd" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_017.png" id="17_pu5v7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cdrrh"]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_8takj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_x2jbs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_62qkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qw6xp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_s0gam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_lg7h3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6c02o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mc7eg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_68ndu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jrdbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_td72a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_t4xgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_x461x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ckjus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_nxiuh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_pu5v7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="Animação" type="Node2D"]
+script = ExtResource("1_kjoqi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(243, 392)
+scale = Vector2(0.561111, 0.592222)
+sprite_frames = SubResource("SpriteFrames_cdrrh")
+frame_progress = 0.346389
