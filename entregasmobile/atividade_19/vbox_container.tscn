@@ -1,0 +1,63 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbgy2syppa3sx"]
+
+[ext_resource type="Script" uid="uid://cd5tyjcsybiim" path="res://atividade_19/vbox_container.gd" id="1_34bil"]
+
+[node name="VboxContainer" type="Control"]
+layout_mode = 3
+anchor_right = 0.338
+anchor_bottom = 0.448
+offset_left = 39.0
+offset_top = 13.0
+offset_right = 801.624
+offset_bottom = 370.696
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_34bil")
+
+[node name="formulario" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.151
+anchor_bottom = 0.144
+offset_left = 202.0
+offset_top = 182.0
+offset_right = 319.048
+offset_bottom = 268.688
+
+[node name="Label" type="Label" parent="formulario"]
+layout_mode = 2
+text = "Formulario de dados"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="formulario"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="formulario/HBoxContainer"]
+layout_mode = 2
+text = "Nome:"
+
+[node name="LineEdit" type="LineEdit" parent="formulario/HBoxContainer"]
+layout_mode = 2
+placeholder_text = "Input name"
+expand_to_text_length = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="formulario"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="formulario/HBoxContainer2"]
+layout_mode = 2
+text = "Idade:"
+
+[node name="LineEdit" type="LineEdit" parent="formulario/HBoxContainer2"]
+layout_mode = 2
+placeholder_text = "imput idade"
+expand_to_text_length = true
+
+[node name="Button_mostrar" type="Button" parent="formulario"]
+layout_mode = 2
+text = "Mostrar dados"
+
+[node name="output_label" type="Label" parent="formulario"]
+layout_mode = 2
+text = "seus daadosaprecerão aqui"
+
+[connection signal="pressed" from="formulario/Button_mostrar" to="." method="_on_button_mostrar_pressed"]
