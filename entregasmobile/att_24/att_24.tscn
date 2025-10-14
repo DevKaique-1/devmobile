@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bf3tbv7tug12b"]
+
+[ext_resource type="Script" uid="uid://cmvm0sqjkfca3" path="res://att_24/att_24.gd" id="1_n5s4q"]
+[ext_resource type="Texture2D" uid="uid://c7byxjktpjg05" path="res://att_24/craftpix-net-180537-free-swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/Parts/Swordsman_lvl1_Run_body.png" id="2_e3s3l"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_103pb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_e3s3l")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Att24" type="Node2D"]
+script = ExtResource("1_n5s4q")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(193, 96)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+position = Vector2(77, 48)
+sprite_frames = SubResource("SpriteFrames_103pb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]

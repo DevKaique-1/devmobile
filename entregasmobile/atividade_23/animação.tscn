@@ -1,77 +1,191 @@
-[gd_scene load_steps=19 format=3 uid="uid://db80vxuuo3aby"]
+[gd_scene load_steps=31 format=3 uid="uid://db80vxuuo3aby"]
 
 [ext_resource type="Script" uid="uid://dbqe6rb7bewcl" path="res://atividade_23/animação.gd" id="1_kjoqi"]
-[ext_resource type="Texture2D" uid="uid://bv3mkctmxuw0x" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_001.png" id="2_8takj"]
-[ext_resource type="Texture2D" uid="uid://dq5m3d2llosjk" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_000.png" id="3_x2jbs"]
-[ext_resource type="Texture2D" uid="uid://bnv07d6dwyx2m" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_002.png" id="4_62qkl"]
-[ext_resource type="Texture2D" uid="uid://7mk8270gh7dj" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_003.png" id="5_qw6xp"]
-[ext_resource type="Texture2D" uid="uid://d1hv567er510k" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_005.png" id="6_s0gam"]
-[ext_resource type="Texture2D" uid="uid://cidyreluklrio" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_004.png" id="7_lg7h3"]
-[ext_resource type="Texture2D" uid="uid://bhwicritc0ynw" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_007.png" id="8_6c02o"]
-[ext_resource type="Texture2D" uid="uid://c04o6jbrswcsd" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_008.png" id="9_mc7eg"]
-[ext_resource type="Texture2D" uid="uid://cv6ci0s1tduko" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_009.png" id="10_68ndu"]
-[ext_resource type="Texture2D" uid="uid://b1du3dgp57u8x" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_011.png" id="11_jrdbt"]
-[ext_resource type="Texture2D" uid="uid://cj3nqx7717tt2" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_012.png" id="12_td72a"]
-[ext_resource type="Texture2D" uid="uid://bmkxfe5tip3or" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_013.png" id="13_t4xgu"]
-[ext_resource type="Texture2D" uid="uid://cp878mmwbgmr3" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_014.png" id="14_x461x"]
-[ext_resource type="Texture2D" uid="uid://biwifpr74l2jn" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_016.png" id="15_ckjus"]
-[ext_resource type="Texture2D" uid="uid://6hkjp53ng42b" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_015.png" id="16_nxiuh"]
-[ext_resource type="Texture2D" uid="uid://5v2obafwe5gd" path="res://atividade_23/Reaper_Man_1/PNG/PNG Sequences/Idle/0_Reaper_Man_Idle_017.png" id="17_pu5v7"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ji5x"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_001.png-458654267612156769445f632a8e5e7f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8o3kw"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_000.png-c966b2e3d6492a97c90f2bcae353a2e0.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xqwx3"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_002.png-ae20db84ed11fa717a4d81bafb031444.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v1bss"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_003.png-4a9cecf79f65a559431079ab9982ba07.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yu6yq"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_005.png-af577e1f028846c6a18da2a147b23e00.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k5i7w"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_004.png-e2138aa182cc7cbb35d2d7a171101ba5.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b2blv"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_007.png-1339a0a38504e4369c4799076e83a7dd.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_aph7u"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_008.png-f652e2a79582d56ad8c048030fde3aa2.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oygal"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_009.png-6c9e8c6935d179c643defe290893c9da.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kouui"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_011.png-8107c3a2e60dc8c19e8d7a91d7999e9a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_73wd5"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_012.png-4dee656af9c448c48cde5e9316c99eb8.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7vkfe"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_013.png-fd3955bbde7667fe7861e843e6187321.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rpirj"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_014.png-53b67d27a78c3b786588033d4fb97ebf.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fxm1d"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_016.png-0d959fd33bd8b639d651cc65577489e3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_60tgs"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_015.png-8dbc89a6c8017edaeebd2bb8a15b02fa.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8aelg"]
+load_path = "res://.godot/imported/0_Reaper_Man_Idle_017.png-175bd236682a14241a33dd7b95cf4899.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kjoqi"]
+load_path = "res://.godot/imported/0_Reaper_Man_Running_000.png-a34f4442f953762c56bc1a5fdaede870.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8takj"]
+load_path = "res://.godot/imported/0_Reaper_Man_Running_001.png-da70032d559f947024a9ec2332259c3f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_x2jbs"]
+load_path = "res://.godot/imported/0_Reaper_Man_Running_002.png-4a7f652a26bd3c37f01cc467eb7fd5a4.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_62qkl"]
+load_path = "res://.godot/imported/0_Reaper_Man_Running_003.png-065f87800526345a16343c8f1bb8de19.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qw6xp"]
+load_path = "res://.godot/imported/0_Reaper_Man_Running_004.png-73bfb637d0a406a4f256af1dd9877b53.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s0gam"]
+load_path = "res://.godot/imported/0_Reaper_Man_Running_005.png-545369064fd5aed30cead6fed86b4362.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lg7h3"]
+load_path = "res://.godot/imported/0_Reaper_Man_Running_006.png-0dfd279d0da7743fc469b7d193d57328.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6c02o"]
+load_path = "res://.godot/imported/0_Reaper_Man_Running_007.png-f1050ceec339d30b8ede923257b55f48.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mc7eg"]
+load_path = "res://.godot/imported/0_Reaper_Man_Running_008.png-4645f5f99b0996761d8e13828ae8044a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_68ndu"]
+load_path = "res://.godot/imported/0_Reaper_Man_Running_009.png-9c9795e86e4ca43c489c0019ba634b7b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jrdbt"]
+load_path = "res://.godot/imported/0_Reaper_Man_Running_010.png-d452e19ffe59f25b8b219b91bf17b3d1.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_td72a"]
+load_path = "res://.godot/imported/0_Reaper_Man_Running_011.png-be0cd69e7e70295b02438262edc0f629.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cdrrh"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_8takj")
+"texture": SubResource("CompressedTexture2D_2ji5x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_x2jbs")
+"texture": SubResource("CompressedTexture2D_8o3kw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_62qkl")
+"texture": SubResource("CompressedTexture2D_xqwx3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_qw6xp")
+"texture": SubResource("CompressedTexture2D_v1bss")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_s0gam")
+"texture": SubResource("CompressedTexture2D_yu6yq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_lg7h3")
+"texture": SubResource("CompressedTexture2D_k5i7w")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_6c02o")
+"texture": SubResource("CompressedTexture2D_b2blv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_mc7eg")
+"texture": SubResource("CompressedTexture2D_aph7u")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_68ndu")
+"texture": SubResource("CompressedTexture2D_oygal")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_jrdbt")
+"texture": SubResource("CompressedTexture2D_kouui")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_td72a")
+"texture": SubResource("CompressedTexture2D_73wd5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_t4xgu")
+"texture": SubResource("CompressedTexture2D_7vkfe")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_x461x")
+"texture": SubResource("CompressedTexture2D_rpirj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_ckjus")
+"texture": SubResource("CompressedTexture2D_fxm1d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_nxiuh")
+"texture": SubResource("CompressedTexture2D_60tgs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_pu5v7")
+"texture": SubResource("CompressedTexture2D_8aelg")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
+"speed": 30.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_kjoqi")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_8takj")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_x2jbs")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_62qkl")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_qw6xp")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_s0gam")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_lg7h3")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_6c02o")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_mc7eg")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_68ndu")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_jrdbt")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_td72a")
+}],
+"loop": true,
+"name": &"run",
 "speed": 30.0
 }]
 
@@ -79,7 +193,7 @@ animations = [{
 script = ExtResource("1_kjoqi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(243, 392)
-scale = Vector2(0.561111, 0.592222)
+position = Vector2(200.75, 456.75)
+scale = Vector2(0.400555, 0.428333)
 sprite_frames = SubResource("SpriteFrames_cdrrh")
-frame_progress = 0.346389
+animation = &"new_animation"
